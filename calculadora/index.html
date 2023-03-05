@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/stylehome.css">
+    <title>FusionSun - Simulação</title>
+</head>
+
+<header>
+    <div class="b_o2">
+
+    </div>
+    <div class="img-fusion">
+        <img src="./assets/img/thumbnail_FUSION ENERGIA LOGO.png" alt="logo-fusion" class="img-fusion">
+    </div>
+
+
+
+</header>
+
+<body>
+
+
+
+
+    <div class="containers">
+
+        <div class="container" style="height: 75vh;"> <!--text/COLOR FCA405 H 683 W 392 FAM Akshar bold-->
+
+
+            <div class="text-1"> <!--SIZE 56 COLOR 1B7DBD-->
+                <h1 class="title-container"> <br> SIMULADOR DE <br> ENERGIA SOLAR</h1>
+            </div>
+
+            <div class="text"> <!--font FFFFFF size 23 FAM- ALMARAI-->
+                <h2>A energia solar é proveniente
+                    <br> da luz e do calore do
+                    <br> calor do sol, os quais são
+                    <br> convertidos em eletricidade.
+                    <br> Existem dois tipos de energia
+                    <br> solar: fotovoltaica e térmica.
+                </h2>
+            </div>
+
+            <a href="https://www.instagram.com/fusionsun_energiasolar/" target="_blank"><button type="submit"
+                    value="submit" class="more-information">SAIBA MAIS</button></a>
+            <!--bg 0065A7 font FFFFFF size 25 FAM Akshar-->
+
+            <div class="logo-wpp">
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5585982214962&e=AT32JwCyDoWtEbkXZ1ZXAJ7hSOObyBS6NQ7O8x6NjoyD_7Sk1NBIyHZGKM2U5hlt7vbYRmrWtIPDqZjj1UJfrpWWr7eD8N8l&s=1"
+                    target="_blank">
+                    <img src="./assets/img/whatsapp.png" alt="contact" class="logo-w"></a>
+            </div>
+
+        </div>
+
+
+
+        <div class="container-forms" style="height: 75vh;"> <!--inputs/color 0065A7-->
+
+
+            <div class="text2">
+                <p class="txt-logo1">SIMULADOR DE ENERGIA SOLAR </p>
+                <h1 class="title-forms"> <br> FORMULÁRIO DE ENVIO</h1>
+                <h2 class="gethelp">Precisa de ajuda para encontrar o kW em sua conta de energia? <p type="button"
+                        id="clique" style="text-align: center;" onclick="AbrirModal()" onmouseenter="ponteiro()">
+                        CLIQUE AQUI!
+                    </p>
+                </h2>
+            </div>
+
+            <div class="info-values">
+                <h2 class="info-values">Quanto é o seu gasto médio em kW mensal com conta de luz?</h2>
+                <!--almarai 15 bold-->
+            </div>
+
+            <div class="comp-values">
+                <h4 class="comp-values">-Dados fornecidos na sua conta de luz</h4>
+                <!--font almarai light size 13 light-->
+            </div>
+
+            <input class="values-kw" type="number" placeholder="Kilowatt" id="Kilowatt" required>
+
+            <form action="https://formsubmit.co/fusionsun.solar@gmail.com" method="POST">
+
+                <div class="emails">
+                    <h2 class="emails">Digite seu e-mail:</h2>
+                </div>
+
+                <input class="input-email" name="email" type="email" id="email" placeholder="exemplo@hotmail.com"
+                    required>
+
+
+                <div class="name">
+                    <h2 class="name">Primeiro nome:</h2>
+                </div>
+
+
+                <input class="name-input" name="name" type="text" id="nome" placeholder="Somente primeiro nome"
+                    required>
+
+
+                <div class="distribuidora">
+                    <h2 class="name">Qual sua distribuidora de energia:</h2>
+                </div>
+
+
+                <select class="distribuidora-input" type="text" placeholder="Selecione" disabled required>
+                    <option>ENEL</option>
+                    <option>COELBA</option>
+                </select>
+
+                <div class="phone-estado">
+                    <div class="contato col-lg-6">
+                        <div class="phone">
+                            <h2 class="phone">Contato:</h2>
+                        </div>
+
+
+
+                        <input class="input-phone" name="telefone" type="text" placeholder="(00) 00000-0000" required
+                            maxlength="15" id="inputphone" onkeypress="$(this).mask('(00) 90000-0000')">
+                    </div>
+
+
+                    <div class="estado col-lg-6">
+
+                        <div class="distribuidora">
+                            <h2 class="name">Selecione seu estado:</h2>
+                        </div>
+
+
+                        <select class="distribuidora-input" type="text" placeholder="Selecione" disabled required>
+                            <option>CE</option>
+                            <option>BA</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Novo contado!">
+
+                <button type="submit" value="submit" class="simular" onclick="Solicitar()">ENVIAR E SIMULAR</button>
+
+            </form>
+
+            <div class="terms">
+                <h5 class="terms"> Ao prosseguir você está de acordo com os Termos e Condições de Uso da
+                    FusionSun
+                </h5>
+                <!--almarai 14 light-->
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <html lang="pt-BR">
+    <div id="dv-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="header-txt-modal">
+                    <div style="width: 100%;">
+                        <div style="width: 100%">E N E L </div>
+                        <div style="width: 195%; margin-top: -72px;">
+                            <img src="assets/img/botao-fechar.png" class="btn" onclick="FecharModal()">
+                        </div>
+                    </div>
+                </h1>
+            </div>
+
+            <div class="modal-body">
+                <p class="txt-modal">Em sua conta de energia logo abaixo do campo "Descrição do Faturamento" existe um
+                    campo "CONSUMO/kwh"(item 1 da imagem abaixo) ou em seu aplicativo da ENEL na aba "Historico de
+                    Consumo".</p>
+
+                <img src="./assets/img/enel-img.png" style="width:100%; height: 67vh;" class="img-modal">
+            </div>
+
+            <!-- <div class="modal-footer">
+                <button class="btn" onclick="FecharModal()">Fechar</button>
+            </div> -->
+        </div>
+    </div>
+
+    </html>
+
+    <script src="./assets/js/indexhome.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <div class="b_o1"></div>
+    <div class="b_b"></div>
+
+</body>
+
+
+
+<footer>
+    <h6 class="txt-footer">Copyright &copy; FusionSun 2023 - Todos os direitos reservados.</h6>
+    <h6 class="footer2"> A4 - Desenvolvimento Web</h6>
+
+</footer>
+
+</html>
